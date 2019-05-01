@@ -64,10 +64,11 @@ export default {
         const ad = {
           title: this.title,
           description: this.description,
-          promo: this.promo
+          promo: this.promo,
+          imageSrc: 'https://images.unsplash.com/photo-1506423456648-c11ccb27338d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80'
         }
 
-        console.log(ad)
+        this.$store.dispatch('createAd', ad)
       }
     }
   }

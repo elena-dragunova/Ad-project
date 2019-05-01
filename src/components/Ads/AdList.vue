@@ -3,7 +3,7 @@
     <v-layout row>
       <v-flex xs12 sm6 offset-sm3>
         <h1 class="text--secondary mb-3">My  Adds</h1>
-        <v-card v-for="ad of ads" :key="ad.title" class="elevation-10 mb-3">
+        <v-card v-for="ad of myAds" :key="ad.title" class="elevation-10 mb-3">
           <v-layout row>
 
             <v-flex xs4>
@@ -30,26 +30,9 @@
 
 <script>
 export default {
-  data () {
-    return {
-      ads: [
-        {
-          title: 'First Ad',
-          description: 'I am description',
-          promo: false,
-          imageSrc:
-            'https://v1.vuetifyjs.com/static/doc-images/carousel/planet.jpg',
-          id: 0
-        },
-        {
-          title: 'Second Ad',
-          description: 'I am description',
-          promo: true,
-          imageSrc:
-            'https://v1.vuetifyjs.com/static/doc-images/carousel/sky.jpg',
-          id: 1
-        }
-      ]
+  computed: {
+    myAds () {
+      return this.$store.getters.myAds
     }
   }
 }
