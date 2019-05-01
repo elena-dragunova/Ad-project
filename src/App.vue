@@ -35,21 +35,20 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       drawer: false,
       links: [
-        {title: 'Login', icon: 'lock', url: '/login'},
-        {title: 'Registration', icon: 'face', url: '/registration'},
-        {title: 'Orders', icon: 'bookmark_border', url: '/orders'},
-        {title: 'New Ad', icon: 'note_add', url: '/new'},
-        {title: 'My Ads', icon: 'list', url: '/list'}
+        { title: 'Login', icon: 'lock', url: '/login' },
+        { title: 'Registration', icon: 'face', url: '/registration' },
+        { title: 'Orders', icon: 'bookmark_border', url: '/orders' },
+        { title: 'New Ad', icon: 'note_add', url: '/new' },
+        { title: 'My Ads', icon: 'list', url: '/list' }
       ]
-    };
+    }
   }
-};
+}
 </script>
-
 
 <style lang="scss" scoped>
 .pointer {
